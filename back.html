@@ -1,0 +1,110 @@
+
+<html lang="en">
+
+   <head>
+        
+        <title>Javascript</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+  <link rel="stylesheet" type="text/css" href="design.css">
+   <script src="game.js"></script>
+     <iframe style="display:none;" width="640" height="360" src="https://www.youtube.com/embed/2gm45F4csOY?rel=0&autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</head>
+<body>
+<!--<div id="countdown" style="display:none;">TIME REMAIN:</div>-->
+<div  id="Score">SCORE</div>
+<div id="life">LIFE<br><span id="life1" class="glyphicon glyphicon-heart"></span><span id="life2" class="glyphicon glyphicon-heart"></span><span id="life3" class="glyphicon glyphicon-heart"></span><span id="life4"  class="glyphicon glyphicon-heart"></span><span id="life5" class="glyphicon glyphicon-heart"></span></div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a id="about" href="#" >AboutGAME</a>
+  <a  id="show" href="#" onclick="closeNav()">PLAY</a>
+  <a id="instruction" onclick="closeNav()" href="#">INSTRUCTION</a>
+  <a id ="max" href="#" onclick="closeNav()">MAXSCORE</a>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="Absolute-Center is-Responsive">
+     
+      
+         
+           <h1 id="quote" style="color:#1add2e; position:absolute;"><q>Math is the funniest thing of this World,until or unless you don't make fun of it</q></h1>
+                    
+      
+    </div>    
+  </div>
+  
+   <div class="container" id="gameover" style="display:none;">
+  <div class="row">
+    <div class="Absolute-Center is-Responsive">
+     
+      
+         
+           <h1 style="color:red; position:absolute;">GAME OVER</h1><br><br><br><h2 id="finalscore">YOUR SCORE:0</h2>
+                    
+      
+    </div>    
+  </div>  
+</div>
+ 
+     
+</div>
+  <div class="container" id="maxscore" style="display:none;">
+  <div class="row">
+    <div class="Absolute-Center is-Responsive">
+     
+      
+         
+           <h1 id="maximum" style="color:#ffd800; position:absolute;">MAXSCORE: 0</h1>
+                    
+      
+    </div>    
+  </div>  
+</div>
+
+   <div class="container" id="instruct" style="display:none;">
+  
+<div class="Absolute-Center is-Responsive">
+     <p style="color:#ffd800;position:absolute;float:right;clear:both;"><h3>1. Follow universal rule of arithematic calculations i.e.<a href="https://en.wikipedia.org/wiki/Order_of_operations" target="_blank" style="color:green;"> Order of Operations.</a></h3><br><h3>2. In case of <a href="https://en.wikipedia.org/wiki/Fraction_(mathematics)",target=_blank">improper fraction</a> roundup value according to <a href="https://calculus.subwiki.org/wiki/Greatest_integer_function" target="_blank">greatest integer function.</a> <strong style="color:red;">Ex: 17/11=1,37/17=2.etc.</strong></h3>
+</div>  
+</div>
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+</div>
+<div class="container" id="hidden" style="display:none;">
+  <div class="row">
+    <div class="Absolute-Center is-Responsive">
+     
+      <div class="col-sm-12 col-md-10 col-md-offset-1">
+        <form action="" id="loginForm">
+          <div class="form-group input-group">
+           
+            solve this: <input id="input" class="form-control" type="text" name='input'  readonly="readonly"/>          
+          </div>
+          <div class="form-group input-group">
+ 
+           your answer: <input id="output" class="form-control" type="text" name='output' placeholder=""/>     
+          </div>
+		  <p id ="correct"></p>
+ 
+          <div class="form-group">
+            <button id="check" type="button" class="btn btn-def btn-primary">submit</button>
+          </div>
+          
+        </form>        
+      </div>  
+    </div>    
+  </div>
+     
+</div>
+ 
+		   
+
+        
+    </body>
+
+</html>

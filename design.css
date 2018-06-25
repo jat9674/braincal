@@ -1,0 +1,98 @@
+body{
+background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk9QCy6ggnQLSMVo77B5VA9ZEhEU20xDrPKxMh5BuneBuCYsUIzg');
+background-repeat:no-repeat;
+height:100%;
+background-size:cover;
+color:white;
+}
+div.well{
+  height: 250px;
+} 
+
+.Absolute-Center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+            #name {
+			margin:50px;}
+            #namesecond {
+			margin:50px;
+			}
+			
+.Absolute-Center.is-Responsive {
+  width: 50%; 
+  height: 50%;
+  min-width: 200px;
+  max-width: 700px;
+  padding: 40px;
+}
+
+#logo-container{
+  margin: auto;
+  margin-bottom: 10px;
+  width:200px;
+  height:30px;
+ 
+}
+ .btn-group{
+ height:50px;
+ width:45px;
+ }
+ .sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 225px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media not (min-width:240px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+ #Score{float:right;
+ display:none;
+ padding:40px;}
+ #life{
+ display:none;
+ float:right;
+ padding:40px;
+ }
+ #countdown{
+ float:right;
+ padding:40px;
+ }
+ .glyphicon{
+ color:red;
+ }
